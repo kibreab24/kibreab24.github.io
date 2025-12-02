@@ -3,48 +3,172 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <title>Blog - Kibreab's Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-          <!-- navigation bar-->
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <a href="index.html">Kibreab</a>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-
-                </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Kibreab</a>
             </div>
-       </div>
-  </nav>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="developer.html">Developer</a></li>
+            </ul>
+        </div>
+    </nav>
 
-   <main>
-      <h1>My Blog</h1>
-        <p>This page will show my blog.</p>
-   </main>
+    <main>
+           <!-- this is Blog Hero Section -->
+        <section class="blog-hero">
+            <div class="container">
+                <h1>My Learning Journey</h1>
+                <p class="blog-subtitle">Thoughts, insights, and reflections on my computer science education</p>
+            </div>
+        </section>
 
+        <!-- Blog Articles -->
+        <section class="blog-articles">
+            <div class="container">
+                <article class="blog-card">
+                    <div class="blog-date">
+                        <span class="date-day">25</span>
+                        <span class="date-month">Nov</span>
+                        <span class="date-year">2025</span>
+                    </div>
+                    <div class="blog-content">
+                        <h2>Building My First Portfolio Website</h2>
+                        <div class="blog-meta">
+                            <span class="blog-category">Web Development</span>
+                            <span class="blog-read-time">📖 5 min read</span>
+                        </div>
+                        <p class="blog-excerpt">
+                            Creating this portfolio website has been an incredible learning experience. 
+                            From planning the structure to implementing responsive design, I've gained 
+                            practical insights into modern web development. The journey taught me the 
+                            importance of clean code, user experience, and mobile-first design.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">HTML5</span>
+                            <span class="blog-tag">CSS3</span>
+                            <span class="blog-tag">Responsive Design</span>
+                            <span class="blog-tag">Learning</span>
+                        </div>
+                      
+                    </div>
+                </article>
 
-   <footer>
-        <p>&copy; 2025 Kibreab</p>
-   </footer>
+                <article class="blog-card">
+                    <div class="blog-date">
+                        <span class="date-day">10</span>
+                        <span class="date-month">Dec</span>
+                        <span class="date-year">2024</span>
+                    </div>
+                    <div class="blog-content">
+                        <h2>From Console to Desktop: My Java Development Journey</h2>
+                        <div class="blog-meta">
+                            <span class="blog-category">Java Programming</span>
+                            <span class="blog-read-time">📖 7 min read</span>
+                        </div>
+                        <p class="blog-excerpt">
+                            Transitioning from console-based applications to desktop GUI development 
+                            with JavaFX has been challenging but rewarding. I learned about event-driven 
+                            programming, UI components, and database integration. The Secondhand Connect 
+                            project pushed me to think about real-world software architecture.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">Java</span>
+                            <span class="blog-tag">JavaFX</span>
+                            <span class="blog-tag">OOP</span>
+                            <span class="blog-tag">Desktop Apps</span>
+                        </div>
+                    </div>
+                </article>
 
-     <script src="js/script.js"></script>
+                <article class="blog-card">
+                    <div class="blog-date">
+                        <span class="date-day">25</span>
+                        <span class="date-month">Apr</span>
+                        <span class="date-year">2025</span>
+                    </div>
+                    <div class="blog-content">
+                        <h2>Computer Science: Where Theory Meets Practice</h2>
+                        <div class="blog-meta">
+                            <span class="blog-category">CS Concepts</span>
+                            <span class="blog-read-time">📖 6 min read</span>
+                        </div>
+                        <p class="blog-excerpt">
+                            Studying courses like Computer Architecture, Networks, and Databases 
+                            has shown me how theoretical concepts apply to real-world systems. 
+                            Understanding how computers work at different levels has made me a 
+                            better programmer and problem solver. Every concept has practical implications.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">Computer Science</span>
+                            <span class="blog-tag">Learning</span>
+                            <span class="blog-tag">Theory</span>
+                            <span class="blog-tag">Practice</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
+        <aside class="blog-sidebar">
+            <div class="container">
+                <div class="sidebar-content">
+                    <div class="sidebar-section">
+                        <h3>📚 Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="#">Web Development (2)</a></li>
+                            <li><a href="#">Java Programming (3)</a></li>
+                            <li><a href="#">CS Concepts (4)</a></li>
+                            <li><a href="#">Learning Journey (5)</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h3>🔥 Popular Tags</h3>
+                        <div class="tag-cloud">
+                            <span class="tag-item">HTML5</span>
+                            <span class="tag-item">CSS3</span>
+                            <span class="tag-item">Java</span>
+                            <span class="tag-item">OOP</span>
+                            <span class="tag-item">Learning</span>
+                            <span class="tag-item">Projects</span>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h3>📝 About This Blog</h3>
+                        <p>This blog documents my journey as a Computer Science student. 
+                           I share insights from coursework, projects, and personal learning experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kibre'ab. All blog content represents my personal learning journey.</p>
+    </footer>
 
 </body>
 </html>
