@@ -3,48 +3,158 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <title>Contact - Kibreab's Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-          <!-- navigation bar-->
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <a href="index.html">Kibreab</a>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-
-                </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Kibreab</a>
             </div>
-       </div>
-  </nav>
+            
+           
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="developer.html">Developer</a></li>
+            </ul>
+        </div>
+    </nav>
 
-   <main>
-      <h1>Contact Me</h1>
-        <p>This page will show my address.</p>
-   </main>
+    <main>
+        
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Get In Touch</h1>
+                <p class="contact-subtitle">Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
+            </div>
+        </section>
 
+      
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
 
-   <footer>
-        <p>&copy; 2025 Kibreab</p>
-   </footer>
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <h2>Send a Message</h2>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What is this regarding?">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Your Message *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Type your message here..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
 
-     <script src="js/script.js"></script>
+                   
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        
+                        <div class="info-item">
+    <div class="info-icon">📧</div>
+    <div class="info-content">
+        <h3>Email</h3>
+        <p><a href="mailto:kibreab24kb@gmail.com" class="email-link">kibreab24kb@gmail.com</a></p>
+        <small>I'll respond within 24 hours</small>
+    </div>
+</div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">📱</div>
+                            <div class="info-content">
+                                <h3>Phone</h3>
+                                <p>+251937074001</p>
+                                <small>Available: Mon-Sun, 2AM-4PM</small>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div class="info-content">
+                                <h3>Location</h3>
+                                <p>Mekelle, Tigray, Ethiopia</p>
+                                <small>Mekelle University Area</small>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">🕒</div>
+                            <div class="info-content">
+                                <h3>Response Time</h3>
+                                <p>24 Hours</p>
+                                <small>I will try my best to respond as soon as possible</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+          <!-- FAQ Section -->
+        <section class="contact-faq">
+             <div class="container">
+                 <h2>Frequently Asked Questions</h2>
+                 <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>🤔 What should I include in my message?</h3>
+                        <p>Please include your name, purpose of contact, and any relevant details about your project or inquiry.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>💼 Are you available for freelance work?</h3>
+                        <p>Yes, I'm open to freelance opportunities. Please provide project details and timeline in your message.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>🎓 Can you help with academic projects?</h3>
+                        <p>I'm happy to discuss academic collaborations, especially in Computer Science and Web Development.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>⏰ What's your typical response time?</h3>
+                        <p>I aim to respond within 24 hours for all inquiries.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kibre'ab.</p>
+    </footer>
 
 </body>
 </html>
