@@ -1295,7 +1295,7 @@ footer {
 
 
 
-/* ===== RESPONSIVE DESIGN ===== */
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     body { padding-top: 60px; }
     
@@ -1373,6 +1373,7 @@ footer {
     .interests h2,
     .learning-section h2 {
         font-size: 2rem;
+        padding: 0 15px;
     }
     
     .about-subtitle,
@@ -1552,7 +1553,6 @@ footer {
         page-break-inside: avoid;
     }
 }
-
 
 
 
