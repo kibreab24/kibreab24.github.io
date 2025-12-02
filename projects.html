@@ -3,48 +3,186 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <title>Projects - Kibreab's Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-          <!-- navigation bar-->
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <a href="index.html">Kibreab</a>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-
-                </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Kibreab</a>
             </div>
-       </div>
-  </nav>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="developer.html">Developer</a></li>
+            </ul>
+        </div>
+    </nav>
 
-   <main>
-      <h1>My projects</h1>
-        <p>This page will show my work.</p>
-   </main>
+    <main>
+        <section class="projects-hero">
+            <div class="container">
+                <h1>My Projects</h1>
+                <p class="projects-subtitle">Showcasing my journey from console applications to desktop apps</p>
+            </div>
+        </section>
 
+        <section class="featured-projects">
+            <div class="container">
+                <h2>Featured Work</h2>
 
-   <footer>
-        <p>&copy; 2025 Kibreab</p>
-   </footer>
+                <div class="project-card featured">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Secondhand Connect</h3>
+                            <span class="project-status in-progress">In Progress</span>
+                        </div>
+                        <p class="project-description">
+                            A comprehensive desktop marketplace application built with JavaFX 
+                            for buying and selling used items.
+                            Features user authentication, product management, and database integration.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>User registration and login system</li>
+                                <li>Product listing and search functionality</li>
+                                <li>Database persistence with MySQL</li>
+                                <li>Modern GUI with JavaFX components</li>
+                                <li>Shopping cart and transaction management</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">JavaFX</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">OOP</span>
+                            <span class="tech-tag">Desktop App</span>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <div class="project-icon">🖥️</div>
+                            <p>Desktop Application</p>
+                        </div>
+                    </div>
+                </div>
 
-     <script src="js/script.js"></script>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Quiz Management System</h3>
+                            <span class="project-status completed">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            A console-based quiz application demonstrating Object-Oriented Programming principles.
+                            Manages multiple question types, user scores, and quiz sessions.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Multiple question types (MCQs, True/False)</li>
+                                <li>Score tracking and results display</li>
+                                <li>Data encapsulation for security</li>
+                                <li>Console-based user interface</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">OOP</span>
+                            <span class="tech-tag">Console</span>
+                            <span class="tech-tag">Algorithms</span>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <div class="project-icon">💻</div>
+                            <p>Console Application</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Portfolio Website</h3>
+                            <span class="project-status completed">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            A responsive, modern portfolio website built with pure HTML5, CSS3 and JavaScript.
+                            Shows my projects, skills, and academic journey with a professional design.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Fully responsive design</li>
+                                <li>Modern CSS Grid and Flexbox layout</li>
+                                <li>Mobile compatible</li>
+                                <li>Interactive JavaScript elements</li>
+                                <li>Clean, semantic HTML structure</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <div class="project-icon">🌐</div>
+                            <p>Web Application</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>2</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>3</h3>
+                        <p>Programming Languages</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>1</h3>
+                        <p>In Progress</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>1000+</h3>
+                        <p>Lines of Code</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kibre'ab</p>
+    </footer>
 
 </body>
 </html>
