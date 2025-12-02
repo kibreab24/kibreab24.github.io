@@ -3,48 +3,225 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <title>Resume - Kibreab's Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-          <!-- navigation bar-->
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <a href="index.html">Kibreab</a>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-
-                </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+   
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Kibreab</a>
             </div>
-       </div>
-  </nav>
+            
+           
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="developer.html">Developer</a></li>
+            </ul>
+        </div>
+    </nav>
 
-   <main>
-      <h1>My Resume</h1>
-        <p>This page will show my resume.</p>
-   </main>
+    <main>
+        <!-- Resume Hero -->
+        <section class="resume-hero">
+            <div class="container">
+                <div class="resume-header">
+                    <div class="resume-title">
+                        <h1>Kibreab</h1>
+                        <p class="resume-subtitle">Computer Science Student</p>
+                        <p class="resume-tagline">Passionate developer with strong foundation in software development and problem-solving</p>
+                    </div>
+                    <div class="resume-actions">
+                        <a href="#print-instructions" class="btn btn-primary">📄 Printable Version</a>
+                        <a href="contact.html" class="btn btn-secondary">📧 Contact Me</a>
+                    </div>
+                </div>
+                
+                <div class="resume-contact">
+                    <div class="contact-item">
+    <span class="contact-icon">📧</span>
+    <span>
+        <a href="mailto:kibreab24kb@gmail.com" class="email-link">kibreab24kb@gmail.com</a>
+           </span>
+             </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <span>+251 937074001</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>Mekelle, Tigray Ethiopia</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🔗</span>
+                        <span><a href="https://github.com/yourusername" style="color: white; text-decoration: underline;">github.com/yourusername</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="resume-content">
+            <div class="container">
+                <div class="resume-grid">
+                  
+                    <div class="resume-left">
+                       
+                        <section class="resume-section">
+                            <h2>🎓 Education</h2>
+                            <div class="resume-item">
+                                <h3>Bachelor of Computer Science</h3>
+                                <p class="resume-meta">Mekelle University | 2023 - Present</p>
+                                <ul class="resume-list">
+                                    <li>Expected Graduation: 2027</li>
+                                    <li>Current GPA: 3.8/4.0</li>
+                                    <li>Relevant Courses: OOP, Databases, Networking, Web Programming, Software Engineering</li>
+                                </ul>
+                                <a href="about.html#education" class="resume-link">View Education Details →</a>
+                            </div>
+                        </section>
 
-   <footer>
-        <p>&copy; 2025 Kibreab</p>
-   </footer>
+                        <!-- Skills -->
+                        <section class="resume-section">
+                            <h2>💻 Technical Skills</h2>
+                            <div class="resume-item">
+                                <h3>Programming Languages</h3>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">HTML5</span>
+                                    <span class="skill-tag">CSS3</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">C++</span>
+                                </div>
+                                <a href="skills.html#programming" class="resume-link">View All Skills →</a>
+                            </div>
+                            
+                            <div class="resume-item">
+                                <h3>Tools & Technologies</h3>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Git & GitHub</span>
+                                    <span class="skill-tag">VS Code</span>
+                                    <span class="skill-tag">MySQL</span>
+                                    <span class="skill-tag">JavaFX</span>
+                                    <span class="skill-tag">Java</span>
+                                </div>
+                            </div>
+                            
+                            <div class="resume-item">
+                                <h3>CS Concepts</h3>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Object-Oriented Programming</span>
+                                    <span class="skill-tag">Database Systems</span>
+                                    <span class="skill-tag">Computer Networks</span>
+                                    <span class="skill-tag">Software Engineering</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
 
-     <script src="js/script.js"></script>
+                    <!-- Right Column -->
+                    <div class="resume-right">
+                        <!-- Projects -->
+                        <section class="resume-section">
+                            <h2>🚀 Projects</h2>
+                            <div class="resume-item">
+                                <h3><a href="projects.html#secondhand-connect" class="project-link">Secondhand Connect</a></h3>
+                                <p class="resume-meta">JavaFX Desktop Application | In Progress</p>
+                                <ul class="resume-list">
+                                    <li>Marketplace for buying/selling used items</li>
+                                    <li>User authentication and product management</li>
+                                    <li>Database integration with MySQL</li>
+                                    <li>Modern GUI with JavaFX components</li>
+                                </ul>
+                                <a href="projects.html#secondhand-connect" class="resume-link">View Project Details →</a>
+                            </div>
+                            
+                            <div class="resume-item">
+                                <h3><a href="projects.html#quiz-system" class="project-link">Quiz Management System</a></h3>
+                                <p class="resume-meta">Java Console Application | Completed</p>
+                                <ul class="resume-list">
+                                    <li>Demonstrates OOP principles</li>
+                                    <li>Multiple question types support</li>
+                                    <li>Score tracking and results display</li>
+                                    <li>Data encapsulation and security</li>
+                                </ul>
+                                <a href="projects.html#quiz-system" class="resume-link">View Project Details →</a>
+                            </div>
+                            
+                            <div class="resume-item">
+                                <h3><a href="projects.html#portfolio" class="project-link">Portfolio Website</a></h3>
+                                <p class="resume-meta">Responsive Web Application | Completed</p>
+                                <ul class="resume-list">
+                                    <li>8-page responsive portfolio</li>
+                                    <li>Modern HTML5/CSS3 implementation</li>
+                                    <li>Mobile-first design approach</li>
+                                    <li>Clean, semantic code structure</li>
+                                </ul>
+                                <a href="projects.html#portfolio" class="resume-link">View Project Details →</a>
+                            </div>
+                        </section>
 
+                        <section class="resume-section">
+                            <h2>🌟 Additional Information</h2>
+                            <div class="resume-item">
+                                <h3>Languages</h3>
+                                <p>English (Fluent), Amharic, Tigrigna</p>
+                            </div>
+                            
+                            <div class="resume-item">
+                                <h3>Interests</h3>
+                                <p>Web Development, Software Architecture, Problem Solving, Continuous Learning</p>
+                            </div>
+                            
+                            <div class="resume-item">
+                                <h3>Availability</h3>
+                                <p>Open to internships and collaborative projects</p>
+                                <a href="contact.html" class="resume-link">Contact for Opportunities →</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Print Instructions -->
+        <section class="print-instructions" id="print-instructions">
+            <div class="container">
+                <div class="instruction-card">
+                    <h3>🖨️ How to Save as PDF</h3>
+                    <p>Since this is a static HTML/CSS website without JavaScript, you can save this resume as PDF using your browser:</p>
+                    <ol class="instruction-steps">
+                        <li><strong>Windows/Linux:</strong> Press <kbd>Ctrl</kbd> + <kbd>P</kbd></li>
+                        <li><strong>Mac:</strong> Press <kbd>Cmd</kbd> + <kbd>P</kbd></li>
+                        <li>In the print dialog, select <strong>"Save as PDF"</strong> as printer</li>
+                        <li>Adjust margins and layout as needed</li>
+                        <li>Click <strong>"Save"</strong> to download PDF</li>
+                    </ol>
+                    <p class="instruction-note">💡 <strong>Tip:</strong> Use the "Printable Version" button above for a print-optimized view.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kibre'ab.</p>
+        <p class="footer-note">Last updated: November 2025 | <a href="contact.html" style="color: #666;">Contact for updated version</a></p>
+    </footer>
 
 </body>
 </html>
