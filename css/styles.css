@@ -1292,7 +1292,7 @@ footer {
         width: 100%;
         flex-direction: column;
         background: white;
-        box-shadow: 0 10px 27px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 27px rgba(97,217,250);
         padding: 1rem 0;
         z-index: 1000;
     }
@@ -1637,4 +1637,5 @@ footer {
     .developer-hero h1 { font-size: 1.8rem; }
     .developer-hero p { font-size: 1rem; }
 }
+
 
