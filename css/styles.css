@@ -1283,6 +1283,8 @@ footer {
     .hamburger { display: flex; }
     
     .nav-menu {
+        max-height: 800px;
+        overflow-y: auto;
         display: none;
         position: absolute;
         top: 60px;
@@ -1635,3 +1637,4 @@ footer {
     .developer-hero h1 { font-size: 1.8rem; }
     .developer-hero p { font-size: 1rem; }
 }
+
