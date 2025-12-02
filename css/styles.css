@@ -339,6 +339,9 @@ footer {
     margin-top: 2rem;
 }
 
+
+
+
 /* ===== ABOUT PAGE ===== */
 .about-hero,
 .projects-hero,
@@ -1299,7 +1302,7 @@ footer {
     .hamburger { display: flex; }
     
     .nav-menu {
-        max-height: 600px;
+        max-height: 700px;
         overflow-y: auto;
         display: none;
         position: absolute;
@@ -1459,7 +1462,7 @@ footer {
     body { padding-top: 60px; }
     
     .nav-container { height: 60px; padding: 0 15px; }
-    .nav-menu a { padding: 1.2rem 2rem; font-size: 1.1rem; }
+    .nav-menu a { padding: 10px 15px; font-size: 14px; display: flex; align-items: center; justify-content: center; height: 100%;}
     
     .hero { padding: 80px 0 60px; }
     .hero-title { font-size: 2rem; }
@@ -1655,3 +1658,38 @@ footer {
 }
 
 
+
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        padding-left: 40px;
+    }
+    
+    .timeline-item::before {
+        left: 20px;
+    }
+    
+    .timeline-date {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .timeline-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline-item {
+        padding-left: 30px;
+    }
+    
+    .timeline-item::before {
+        left: 15px;
+    }
+    
+    .timeline-content {
+        padding: 1rem;
+    }
+}
