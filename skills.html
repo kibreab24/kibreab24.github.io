@@ -3,48 +3,203 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <title>Skills - Kibreab's Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-          <!-- navigation bar-->
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <a href="index.html">Kibreab</a>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-
-                </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+   
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Kibreab</a>
             </div>
-       </div>
-  </nav>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="developer.html">Developer</a></li>
+            </ul>
+        </div>
+    </nav>
 
-   <main>
-      <h1>My Skills</h1>
-        <p>This page will show my skills.</p>
-   </main>
+    <main>
+        <section class="skills-hero">
+            <div class="container">
+                <h1>My Skills & Technologies</h1>
+                <p class="skills-subtitle">
+                    Overview of my technical abilities and computer science knowledge
+                </p>
+            </div>
+        </section>
 
+        <section class="skills-section">
+            <div class="container">
+                <h2>Programming Languages</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>💻 Core Languages</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">Java</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" style="width: 65%"></div>
+                                </div>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML5</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" style="width: 80%"></div>
+                                </div>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">CSS3</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" style="width: 75%"></div>
+                                </div>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" style="width: 50%"></div>
+                                </div>
+                                <span class="skill-percent">50%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">C++</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" style="width: 85%"></div>
+                                </div>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-   <footer>
-        <p>&copy; 2025 Kibreab</p>
-   </footer>
+        <section class="skills-section bg-light">
+            <div class="container">
+                <h2>Computer Science Concepts</h2>
+                <div class="concepts-grid">
+                    <div class="concept-category">
+                        <h3>🎯 Core CS Fundamentals</h3>
+                        <div class="concept-items">
+                            <div class="concept-item">
+                                <span class="concept-name">Object-Oriented Programming</span>
+                                <div class="concept-level advanced">Advanced</div>
+                            </div>
+                            <div class="concept-item">
+                                <span class="concept-name">Data Structures & Algorithms</span>
+                                <div class="concept-level intermediate">Intermediate</div>
+                            </div>
+                            <div class="concept-item">
+                                <span class="concept-name">Database Systems</span>
+                                <div class="concept-level intermediate">Intermediate</div>
+                            </div>
+                            <div class="concept-item">
+                                <span class="concept-name">Computer Networks</span>
+                                <div class="concept-level intermediate">Intermediate</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="concept-category">
+                        <h3>⚙️ Systems & Architecture</h3>
+                        <div class="concept-items">
+                            <div class="concept-item">
+                                <span class="concept-name">Computer Organization & Architecture</span>
+                                <div class="concept-level intermediate">Intermediate</div>
+                            </div>
+                            <div class="concept-item">
+                                <span class="concept-name">Operating Systems</span>
+                                <div class="concept-level intermediate">Intermediate</div>
+                            </div>
+                            <div class="concept-item">
+                                <span class="concept-name">Software Engineering</span>
+                                <div class="concept-level intermediate">Intermediate</div>
+                            </div>
+                            <div class="concept-item">
+                                <span class="concept-name">Microprocessor & Assembly</span>
+                                <div class="concept-level intermediate">Intermediate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-     <script src="js/script.js"></script>
+        <section class="skills-section">
+            <div class="container">
+                <h2>Tools & Technologies</h2>
+                <div class="tools-grid">
+                    <div class="tool-item">
+                        <span class="tool-icon">📊</span>
+                        <span class="tool-name">MySQL</span>
+                    </div>
+                    <div class="tool-item">
+                        <span class="tool-icon">🔧</span>
+                        <span class="tool-name">Git & GitHub</span>
+                    </div>
+                    <div class="tool-item">
+                        <span class="tool-icon">💾</span>
+                        <span class="tool-name">VS Code</span>
+                    </div>
+                    <div class="tool-item">
+                        <span class="tool-icon">🖥️</span>
+                        <span class="tool-name">JavaFX</span>
+                    </div>
+                    <div class="tool-item">
+                        <span class="tool-icon">🌐</span>
+                        <span class="tool-name">Responsive Design</span>
+                    </div>
+                    <div class="tool-item">
+                        <span class="tool-icon">📝</span>
+                        <span class="tool-name">Debugging</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="learning-section">
+            <div class="container">
+                <h2>Currently Learning & Exploring</h2>
+                <div class="learning-grid">
+                    <div class="learning-item">
+                        <h3>🌐 Web Development</h3>
+                        <p>HTML5, CSS3, JavaScript</p>
+                    </div>
+                    <div class="learning-item">
+                        <h3> Java Programming</h3>
+                        <p>JavaFX</p>
+                    </div>
+                    <div class="learning-item">
+                        <h3>🔧 Software Engineering</h3>
+                        <p>Design Patterns, System Architecture</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kibre'ab.</p>
+    </footer>
 
 </body>
 </html>
